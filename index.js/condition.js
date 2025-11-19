@@ -50,3 +50,23 @@ if(hasPassport && hasVisa && flightbooking && hotelreservation){
     console.log("You cannot travel bruvv")
 }
 
+
+
+var hasPassport= true
+var hasVisa= true
+var flightbooking= false
+var hotelreservation= false
+
+if((hasPassport || hasVisa) && (flightbooking || hotelreservation)){
+    console.log("You can travel bruvv")
+} else{
+    console.log("You cannot travel bruvv")
+}
+
+
+//Ternary Operator
+var votingAge = 18;
+votingAge>=18 ? console.log("You can vote") : console.log("You cannot vote");
+
+var votingAge = 16;
+votingAge>=18 ? console.log("You can vote") : console.log("You cannot vote");
