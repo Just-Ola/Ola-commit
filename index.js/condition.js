@@ -70,3 +70,85 @@ votingAge>=18 ? console.log("You can vote") : console.log("You cannot vote");
 
 var votingAge = 16;
 votingAge>=18 ? console.log("You can vote") : console.log("You cannot vote");
+
+
+//long-way...
+var grade= 30
+
+if (grade<30){
+    console.log("Your grade is F!!")
+}
+else if (grade>=30 && grade<35){
+    console.log("Your grade is E")
+} else if (grade>=35 && grade <55){
+    console.log("Your grade is D")
+} else if (grade>=55 && grade<65){
+    console.log("Your grade is C")
+} else if (grade>=65 && grade<75){
+    console.log("Your grade is B")
+} else if (grade>=75){
+    console.log("Your grade is A")
+}
+
+//Using switch case, the 
+
+let day=1
+switch(day){
+    case 1:
+        console.log("Monday")
+     break
+
+     case 2:
+        console.log("Teusday")
+    break
+
+     case 3:
+        console.log("Wednesday")
+    break 
+
+    case 4:
+        console.log("Thursday")
+    break
+
+     case 5:
+        console.log("Friday")
+     break 
+
+     case 6:
+        console.log("Saturday")
+    break 
+
+    case 7:
+        console.log("Sunday")
+    break
+}
+
+
+//shortcut in finding grades... insted of using if...else.
+let score= 50;
+let grad;
+
+switch(true){
+    case score>= 90:
+    grad= "A";
+    break;
+
+    case score>= 70:
+    grad= "B";
+    break;
+
+    case score>= 60:
+    grad= "C";
+    break;
+
+    case score>= 50:
+    grad= "D";
+    break;
+
+    case score>= 40:
+    graD= "E";
+    break;
+
+}
+
+console.log("Grade:", grad)
