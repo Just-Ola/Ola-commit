@@ -49,7 +49,7 @@ console.log(fullName1("Munachi", "Mazi"));
 
 
 
-//Length, breadth and area of a rectangle
+//Length, breadth and area of a rectangle..
 let length= 7;
 let breadth= 8;
 let area= length * breadth;
