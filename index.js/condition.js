@@ -128,7 +128,7 @@ switch(day){
 }
 
 
-//shortcut in finding grades... insted of using if...else.
+//shortcut in finding grades.... insted of using if...else.
 let score= 50;
 let grad;
 
