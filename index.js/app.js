@@ -1,6 +1,6 @@
 //Variable Declarations and Basic Operations
 
-let age= 78;
+let age= 72;
 age= 17;
 console.log(age)
 
@@ -76,3 +76,41 @@ console.log(myFunction(4, 3));
 let myName= (c, d) => c + "" + d;
 
     console.log(myName("Ami", "Ola"));
+
+
+    
+    /// 26\11\2025
+    function greet(name){
+        console.log("Good morning " + name);
+    }
+    greet("Ola")
+
+    //arrow function...
+    const greet1 = (name1) => {
+        console.log("welcome" + name1)
+    } 
+    greet1(" AmiOla")
+
+
+    function sayHi(name= "Just-Ola"){
+        console.log("Hi " + name)
+    }
+    sayHi();
+
+
+    const person= {
+        name2: "AmiOla",
+        greet(){
+            console.log("Hello " + this.name2)
+        }
+    }
+
+person.greet();
+
+//iterate...
+
+const house= ["mansion", "bungalow", "duplex"];
+
+for(let i=0; i<house.length; i++){
+    console.log(house[i]);
+}
