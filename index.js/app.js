@@ -1,4 +1,4 @@
-//Variable Declarations and Basic Operations
+///Variable Declarations and Basic Operations
 
 let age= 72;
 age= 17;
@@ -18,7 +18,7 @@ let product= num1 * num2;
 console.log(product)
 
 
-//String Methods and talking about characters
+///String Methods and talking about characters
 let text1= "Hello ";
 
 let char= text1.charAt(4);
@@ -49,7 +49,7 @@ console.log(fullName1("Munachi", "Mazi"));
 
 
 
-//Length, breadth and area of a rectangle..
+///Length, breadth and area of a rectangle..
 let length= 7;
 let breadth= 8;
 let area= length * breadth;
@@ -107,7 +107,7 @@ let myName= (c, d) => c + "" + d;
 
 person.greet();
 
-//iterate...
+///iterate...
 
 const house= ["mansion", "bungalow", "duplex"];
 

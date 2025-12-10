@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+
+    <h1 id="today"></h1>
+    <h1>Its Ola &</h1>
+
+    <p id="hmm"></p>
+
+    <h2 id="fu">Fuad nah late-comer</h2>
+
+    <h3 id="four">Aptech Students</h3>
+    <button onclick="changeText()">Click me</button>
+    <br>
+    <br>
+
+    <!-- addition w JS  -->
+    <input id="a" type="number">
+    <input id="b" type="number">
+    <button onclick="addition()">Add</button>
+    <h3 id="answer"></h3>
+
+    <!-- Subtraction w JS -->
+     <input id="c" type="number">
+    <input id="d" type="number">
+    <button onclick="subtraction()">Subtact</button>
+    <h4 id="answer1"></h>
+
+
+
+
+
+
+
+
+
+    <script>
+        document.getElementById("hmm").innerHTML= "Good Morning"
+        document.getElementById("fu").style.color= "blue" 
+        new Date();
+        document.getElementById("today").innerHTML= Date()
+        // const d= new Date(); document.getElementById("today").innerHTML= d;
+        document.getElementById("today").style= "color: Red; font-size: 30px;"
+
+        function changeText(){
+            document.getElementById("four").style= "color: Red; font-size: 30px;"
+            document.getElementById("four").innerHTML="Fvck you"
+        }
+
+
+        function addition(){
+            let num1= Number(document.getElementById("a").value);
+            let num2= Number(document.getElementById("b").value);
+            document.getElementById("answer").innerHTML= num1 + num2;
+        }
+
+        function subtraction(){
+            let num3= Number(document.getElementById("c").value);
+            let num4= Number(document.getElementById("d").value);
+            document.getElementById("answer1").innerHTML= num3 - num4;
+        }
+    </script>
+
+
+    <h4>Good to be here</h4>
+<button id="btn">Try</button>
+
+<script>
+    document.getElementById("btn").onclick= function(){
+        alert("Button Clicked");
+    }
+</script>
+
+
+
+</script>
+</body>
+</html>

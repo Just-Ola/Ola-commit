@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <h5>Welcome to class</h5>
+Enter your name: <input type="text" id="nameInput" onchange="change()">
+
+<script>
+    function change(){
+        const z= document.getElementById("nameInput");
+        z.value= z.value.toUpperCase();
+    }
+</script>
+<br>
+<br>
+<br>
+
+<div style="background-color: red; width: 120px; height: 20px; padding: 40px;" /*onmousedown*/ onmouseover="mOver(this);"  /*onmouseup*/ onmouseout="mOut(this)">
+    Mouse Over me 
+</div>
+
+<script>
+    function mOver(obj){
+        obj.style.backgroundColor="blue"
+        obj.innerHTML= "Thank you"
+    }
+    function mOut(obj){
+        obj.innerHTML= "You're welcome"
+        obj.style.backgroundColor="green"
+        obj.style.Color="white"
+    }
+</script>
+<br>
+<br>
+<br>
+
+
+ <!-- 10/12/2025 -->
+<!-- Usage of alert -->
+<button onclick="myFunction()"> Try it</button>
+
+<button id="btn"> Click</button>
+
+<script>
+    function myFunction(){
+        alert ("Button click using HTML!!")
+    }
+    document.getElementById("btn").addEventListener("click", function(){
+        alert("BUTTON CLICKED!!");
+    })
+</script>
+</body>
+</html>

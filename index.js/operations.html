@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <input id="a" type="number">
+    <input id="b" type="number">
+    <br>
+    <br>
+    <button onclick="addition()">Add</button>
+    <button onclick="subtraction()">Subtract</button>
+    <button onclick="multiplication()">Divide</button>
+    <button onclick="division()">Multiply</button>
+
+    <h1 id="answer"></h1>
+    </div>
+
+
+    <h2 id="okayy">Ola</h2>
+    <button onclick="changetext()">Looking forward</button>
+
+     <h4 id="for">Aptech Students</h4>
+    <button onclick="changeText()">Click me</button>
+
+
+    
+
+    <script>
+        function addition(){
+            let num1= Number(document.getElementById("a").value);
+            let num2= Number(document.getElementById("b").value);
+            document.getElementById("answer").innerHTML= num1 + num2;
+        }
+         function subtraction(){
+            let num1= Number(document.getElementById("a").value);
+            let num2= Number(document.getElementById("b").value);
+            document.getElementById("answer").innerHTML= num1 - num2;
+        }
+         function multiplication(){
+            let num1= Number(document.getElementById("a").value);
+            let num2= Number(document.getElementById("b").value);
+            document.getElementById("answer").innerHTML= num1 * num2;
+        }
+         function division(){
+            let num1= Number(document.getElementById("a").value);
+            let num2= Number(document.getElementById("b").value);
+            document.getElementById("answer").innerHTML= num1 / num2;
+        }
+
+
+        function changeText(){
+            document.getElementById("mm").innerHTML="Looking Backward"
+        }
+         function changeText(){
+            document.getElementById("for").innerHTML="Fvck you"
+            document.getElementById("for").style= "color: Red; font-size: 30px;"
+            
+        }
+    </script>
+
+
+
+</body>
+</html>

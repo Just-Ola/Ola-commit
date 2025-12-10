@@ -2,7 +2,7 @@ var votingAge = 18;
 
 var HaveVotersCard = false;
 
-if (votingAge >= 18 || HaveVotersCard) {
+if ( ! (votingAge >= 18 || HaveVotersCard == true ) ) {
     console.log("You can vote")
 }
 else{
@@ -21,11 +21,11 @@ if(myChoice==available) {
 
 
 var age= 16
-paidTution= "True"
-passedJAMB="True"
-Have5credits="True"
+paidTution= true
+passedJAMB=true
+Have5credits=true
 
-if( age>= 16 && paidTution && passedJAMB && Have5credits){
+if( (age>= 16 && paidTution ==true) && (passedJAMB ==true && Have5credits == true)){
     console.log("You r admitted")
 }else{
     console.log ("You are not admitted")
@@ -34,10 +34,10 @@ if( age>= 16 && paidTution && passedJAMB && Have5credits){
 
 
 
-//you want to travel to UK, for 1wk tourism
-//write a if..else conditional statement that tests
-//if you have a valid passport, visa, flight booking and hotel reservation
-//  You can travel otherwisw, you cannot travel
+/// you want to travel to UK, for 1wk tourism
+/// write a if..else conditional statement that tests
+/// if you have a valid passport, visa, flight booking and hotel reservation
+///  You can travel otherwisw, you cannot travel
 
 var hasPassport= true
 var hasVisa= true
@@ -64,7 +64,7 @@ if((hasPassport || hasVisa) && (flightbooking || hotelreservation)){
 }
 
 
-//Ternary Operator
+///Ternary Operator
 var votingAge = 18;
 votingAge>=18 ? console.log("You can vote") : console.log("You cannot vote");
 
@@ -76,7 +76,7 @@ votingAge>=18 ? console.log("You can vote") : console.log("You cannot vote");
 //updated today 20/11/2025
 
 
-//long-way...
+///long-way...
 var grade= 30
 
 if (grade<30){
@@ -94,9 +94,9 @@ else if (grade>=30 && grade<35){
     console.log("Your grade is A")
 }
 
-//Using switch case, the 
+//Using switch case 
 
-let day=1
+let day=5
 switch(day){
     case 1:
         console.log("Monday")
@@ -128,7 +128,7 @@ switch(day){
 }
 
 
-//shortcut in finding grades.... insted of using if...else.
+///shortcut in finding grades.... insted of using if...else.
 let score= 50;
 let grad;
 
@@ -150,7 +150,7 @@ switch(true){
     break;
 
     case score>= 40:
-    graD= "E";
+    grad= "E";
     break;
 
 }
